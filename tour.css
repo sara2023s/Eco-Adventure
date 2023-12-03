@@ -85,13 +85,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px; /* Adjust the padding as needed */
+    padding: 20px; 
     background: linear-gradient(to bottom, #008148, #274F3D);
     color: #ffffff;
   }
   
   .logo-image-footer {
-    width: 200px; /* Adjust the size as needed */
+    width: 200px; 
     height: auto;
   }
   
@@ -108,7 +108,7 @@ body {
   }
   
   .footer-nav ul li {
-    margin-bottom: 10px; /* Adjust the spacing between pages */
+    margin-bottom: 10px; 
   }
   
   .footer-nav ul li a {
@@ -128,6 +128,6 @@ body {
   }
   
   .contact-details div {
-    margin-bottom: 10px; /* Adjust the spacing between contact details */
+    margin-bottom: 10px; 
   }
  
