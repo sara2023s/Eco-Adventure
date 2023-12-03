@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles_tours.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <title>TravelNZ - Eco Adventures</title>
+  <script>
+    $(document).ready(function() {
+    var currentIndex = 1;
+
+    $('.arrow').click(function() {
+      var tourCards = $('.slider-container .tour-card, .featured-tours .tour-card-right, .featured-tours .tour-card-left, .all-tours .all-tour-card');
+      var totalSlides = tourCards.length;
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    });
+
+    function updateSlider() {
+      var translateValue = -currentIndex * 100 + '%';
+      $('.slider-container .tour-cards, .featured-tours .tour-cards, .all-tours .all-tour-grid').css('transform', 'translateX(' + translateValue + ')');
+    }
+
+    $('.tour-card, .tour-card-right, .tour-card-left, .all-tour-card').click(function() {
+      var tourTitle = $(this).find('.tour-details h3').text();
+      var tourDuration = $(this).find('.tour-details .tour-description').text();
+      window.location.href = 'tour.html?title=' + encodeURIComponent(tourTitle) + '&duration=' + encodeURIComponent(tourDuration);
+    });
+  });
+  </script>
+
+  <style>
+    body {
+      font-family: 'Lora', serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Logo" class="logo-image-header">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="tours.html" class="book-now-button-H">Book Now</a>
+</header>
+  
+<div class="hero">
+  <div class="text-overlay">
+    <h1>Explore Our Tours</h1>
+    <h2>Our collection of thoughtfully crafted Eco-conscious tours invites you to discover, learn, and contribute to the preservation of the environment.</h2>
+  </div>
+  <div class="slider-container" id="tourSlider">
+    <div class="tour-card">
+      <div class="tour-image">
+        <img src="fiordland.jpeg" alt="Tour Image 1">
+      </div>
+      <div class="tour-details">
+        <h3>Fiordland</h3>
+        <p class="tour-description">5 days, 4 nights</p>
+      </div>
+    </div>
+    <div class="tour-card">
+      <div class="tour-image">
+        <img src="tasman.jpeg" alt="Tour Image 2">
+      </div>
+      <div class="tour-details">
+        <h3>Abel Tasman</h3>
+        <p class="tour-description">7 days, 6 nights</p>
+      </div>
+    </div>
+    <!-- Add more tour cards as needed -->
+  </div>
+  <div class="arrow" onclick="updateSlider()">&#9654;</div>
+</div>
+
+<section class="featured-tours">
+  <h2>Featured Tours</h2>
+  <div class="tour-card-right">
+    <div class="tour-description-right">
+      <h3>Wilderness Explorer: Fiordland Trek</h3>
+      <p>Guided trekking through lush rain forests and cascading waterfalls. Followed by overnight camping amidst the breathtaking beauty of the fiords. 
+      <ul>
+        <li>Duration: 5 days, 4 nights </li>
+        <li>Destination: Fiordland National Park, New Zealand</li>
+      </ul>
+      <a href="#" class="book-now-button-T">Book Now</a>
+    </div>
+    <div class="tour-image-right">
+      <img src="fiordland.jpeg" alt="Wilderness Explorer: Fiordland Trek">
+    </div>
+  </div>
+
+  <div class="tour-card-left">
+    <div class="tour-image-left">
+      <img src="tasman.jpeg" alt="Coastal Conservation & Marine Adventure">
+    </div>
+    <div class="tour-description-left">
+      <h3>Coastal Conservation & Marine Adventure</h3>
+      <p>This guided coastal adventure includes kayaking along the pristine coastline, exploring the hidden coves and beaches. </p>
+      <ul>
+        <li>Duration: 7 days, 6 nights</li>
+        <li> Destination: Abel Tasman National Park, New Zealand</li>
+      </ul>
+      <a href="#" class="book-now-button-T">Book Now</a>
+    </div>
+  </div>
+
+  <div class="tour-card-right">
+    <div class="tour-description-right">
+      <h3>Wilderness Explorer: Fiordland Trek</h3>
+      <p>This tour includes hikes in alpine landscapes with panoramic views. Not to mention stargazing experiences in the Dark Sky Reserve.</p> 
+      <ul>
+        <li>Duration: 6 days, 5 nights</li>
+        <li>Destination: Mount Aspiring National Park, New Zealand</li>
+      </ul>
+      <a href="#" class="book-now-button-T">Book Now</a>
+    </div>
+    <div class="tour-image-right">
+      <img src="aspiring.jpeg" alt="Mountain Eco-Retreat: Mount Aspiring Expedition">
+    </div>
+  </div>
+
+  <div class="tour-card-left">
+    <div class="tour-image-left">
+      <img src="rotorua.jpeg" alt="Cultural Immersion & Sustainable Living Experience">
+    </div>
+    <div class="tour-description-left">
+      <h3>Cultural Immersion & Sustainable Living Experience</h3>
+      <p>Here you will experience the thrilling Maori culture and storytelling, and participate in sustainable living workshops, not to mention you will explore geothermal wonders.</p>
+      <ul>
+        <li>Duration: 4 days, 3 nights</li>
+        <li> Destination: Rotorua, New Zealand</li>
+      </ul>
+      <a href="#" class="book-now-button-T">Book Now</a>
+    </div>
+  </div>
+
+
+
+  <section class="all-tours">
+    <h2>All Tours</h2>
+    <div class="all-tour-grid">
+      <div class="all-tour-card">
+        <div class="all-tour-image">
+          <img src="tasman.jpeg" alt="Tour Image 1">
+        </div>
+        <div class="all-tour-details">
+          <h3 class="all-tour-title">Abel Tasman National Park</h3>
+          <p class="all-tour-duration">7 days, 6 nights</p>
+          <a href="#" class="all-book-now-button-T">Book Now</a>
+        </div>
+      </div>
+      <div class="all-tour-card">
+        <div class="all-tour-image">
+          <img src="rotorua.jpeg" alt="Tour Image 2">
+        </div>
+        <div class="all-tour-details">
+          <h3 class="all-tour-title">Rotorua, New Zealand</h3>
+          <p class="all-tour-duration">4 days, 3 nights</p>
+          <a href="#" class="all-book-now-button-T">Book Now</a>
+        </div>
+      </div>
+      <div class="all-tour-card">
+        <div class="all-tour-image">
+          <img src="fiordland.jpeg" alt="Tour Image 3">
+        </div>
+        <div class="all-tour-details">
+          <h3 class="all-tour-title">Fiordland National Park</h3>
+          <p class="all-tour-duration">5 days, 4 nights</p>
+          <a href="#" class="all-book-now-button-T">Book Now</a>
+        </div>
+      </div>
+      <div class="all-tour-card">
+        <div class="all-tour-image">
+          <img src="island.jpeg" alt="Tour Image 4">
+        </div>
+        <div class="all-tour-details">
+          <h3 class="all-tour-title">Tirirti Island, New Zealand</h3>
+          <p class="all-tour-duration">4 days, 3 nights</p>
+          <a href="#" class="all-book-now-button-T">Book Now</a>
+        </div>
+      </div>
+      <div class="all-tour-card">
+        <div class="all-tour-image">
+          <img src="aspiring.jpeg" alt="Tour Image 5">
+        </div>
+        <div class="all-tour-details">
+          <h3 class="all-tour-title">Mount Aspiring National Park</h3>
+          <p class="all-tour-duration">6 days, 5 nights</p>
+          <a href="#" class="all-book-now-button-T">Book Now</a>
+        </div>
+      </div>
+      <div class="all-tour-card">
+        <div class="all-tour-image">
+          <img src="glacier.jpeg" alt="Tour Image 6">
+        </div>
+        <div class="all-tour-details">
+          <h3 class="all-tour-title">Fox Glacier National Park</h3>
+          <p class="all-tour-duration">3 days, 2 nights</p>
+          <a href="#" class="all-book-now-button-T">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<footer>
+  <img src="logo.png" alt="Logo" class="logo-image-footer">
+  
+  <div class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="contact-details">
+    <div>123 Eco-Adventure, New Zealand</div>
+    <div>Email: ecoadventure@escape.com</div>
+    <div>Phone: +64 (021) 567 890</div>
+  </div>
+</footer>
+</body>
+</html>
+

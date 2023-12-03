@@ -1,0 +1,133 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(to bottom, #008148, #274F3D);
+    color: #ffffff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 30px;
+    color: #ffffff;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  nav ul li a:hover {
+    color: darkgray; 
+  }
+  
+  .logo-image-header {
+    width: 150px; 
+    height: auto;
+  }
+  
+  .book-now-button-H {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .book-now-button-H:hover {
+    background-color: #008148;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Adjust the padding as needed */
+    background: linear-gradient(to bottom, #008148, #274F3D);
+    color: #ffffff;
+  }
+  
+  .logo-image-footer {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column; /* Display pages vertically */
+    text-align: left;
+  }
+  
+  .footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 10px; /* Adjust the spacing between pages */
+  }
+  
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .footer-nav ul li a:hover {
+    color: darkgray;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column; /* Display contact details vertically */
+    margin-right: 150px;
+    text-align: left;
+  }
+  
+  .contact-details div {
+    margin-bottom: 10px; /* Adjust the spacing between contact details */
+  }
+ 

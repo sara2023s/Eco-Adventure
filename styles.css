@@ -1,0 +1,339 @@
+/* Body */
+
+body {
+  font-family: 'Raleway', Raleway;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background: linear-gradient(to bottom, #008148, #274F3D); /* Background gradient */
+  color: #ffffff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 30px;
+  color: #ffffff;
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes the automatic underlines for links */
+  color: inherit; /* Inherit the color from the parent li */
+}
+
+nav ul li a:hover {
+  color:darkgray; /* Changes colour on hover */
+}
+
+.logo-image-header {
+  width: 150px;
+  height: auto;
+}
+.book-now-button-H {
+  background-color: transparent; /* Button just takes on the background colour */
+  color:#ffffff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border: 2px solid #ffffff; 
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.book-now-button-H:hover {
+  background-color: #008148; /* Change color on hover */
+}
+
+
+/*Hero*/
+
+.image-container {
+  position: relative;
+}
+
+img {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff; /* Text color, so its readable */
+}
+
+h2 {
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
+  
+
+/*Tour Right*/
+
+.featured-tours {
+  text-align: center;
+  padding: 0;
+}
+
+.featured-tours h2 {
+  color: #008148;
+  margin-bottom: 100px;
+}
+
+.tour-card-right {
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 30px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.tour-card-right:hover {
+  background-color: #F1F2F2;
+}
+
+.tour-description-right {
+  flex: 1;
+  padding: 50px;
+  text-align: left;
+}
+
+.tour-image-right {
+  flex: 1;
+  overflow: hidden;
+  max-width: 50%;
+  max-height: 500px;
+}
+
+.tour-image-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.book-now-button-T {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008148;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 180px;
+}
+
+.book-now-button-T:hover {
+  background-color: #008F50; 
+}
+
+.tour-description-right ul {
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.tour-description-right li {
+  margin-bottom: 8px;
+}
+
+
+/*Tour Left*/
+
+.tour-card-left {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.tour-card-left:hover {
+  background-color: #F1F2F2;
+}
+
+.tour-image-left {
+  flex: 1;
+  overflow: hidden;
+  max-width: 50%;
+  max-height: 500px;
+}
+
+.tour-image-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.tour-description-left {
+  flex: 1;
+  padding: 50px;
+  text-align: left;
+}
+
+
+/* Testimonials */
+
+.testimonials-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-separator {
+  background-color: #008148;
+  height: 2px;
+  width: 50px;
+  margin: 20px auto;
+}
+
+.testimonial-name {
+  margin-top: 10px;
+}
+
+
+/* Commitment */
+.commitment-heading {
+  background-color: #F1F2F2;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+}
+
+.commitment-title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.commitment-container {
+  text-align: center;
+  padding: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.commitment-description {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Gap between grid items */
+}
+
+.commitment-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commitment-separator {
+  background-color: #008148; 
+  height: 2px;
+  width: 50px;
+  margin: 20px auto;
+}
+
+.commitment-item-title {
+  color: #008148;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.commitment-item-description {
+  font-size: 1em;
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+  background: linear-gradient(to bottom, #008148, #274F3D);
+  color: #ffffff;
+}
+
+.logo-image-footer {
+  width: 200px; 
+  height: auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column; /* Display pages vertically */
+  text-align: left;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px; 
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-nav ul li a:hover {
+  color: darkgray;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column; /* Display contact details vertically */
+  margin-right: 150px;
+  text-align: left;
+}
+
+.contact-details div {
+  margin-bottom: 10px; /
+}
+
+/*...*/

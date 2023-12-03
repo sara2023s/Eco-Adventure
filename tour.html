@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tour.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <title>TravelNZ - Eco Adventures</title>
+  <script>
+    $(document).ready(function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the tour card details from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const tourTitle = urlParams.get('title');
+        const tourImage = urlParams.get('image');
+        const tourSection = urlParams.get('section');
+
+        // Set the background image and title
+        const heroSection = document.querySelector('.hero');
+        heroSection.style.backgroundImage = `url('${tourImage}')`;
+
+        const titleElement = document.querySelector('.hero h1');
+        titleElement.textContent = tourTitle;
+
+        // Additional logic based on the tour section if needed
+        if (tourSection === 'slider') {
+            // Handle slider-specific logic
+        } else if (tourSection === 'featured') {
+            // Handle featured tours-specific logic
+        } else if (tourSection === 'all') {
+            // Handle all tours-specific logic
+        }
+    });
+});
+  </script>
+
+
+
+  <style>
+    body {
+      font-family: 'Lora', serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Logo" class="logo-image-header">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="tours.html" class="book-now-button-H">Book Now</a>
+</header>
+
+<div class="hero">
+    <div class="hero-overlay">
+      <h1>Tour Title</h1>
+      <p>Explore the beauty of nature with our guided eco-friendly tours</p>
+    </div>
+  </div>
+
+  <section class="tour-details-section">
+    <div class="tour-details-container">
+      <!-- Tour details content -->
+    </div>
+  </section>
+  <!-- Additional sections for more details about the tour -->
+
+
+
+
+
+  <footer>
+    <img src="logo.png" alt="Logo" class="logo-image-footer">
+    
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-details">
+      <div>123 Eco-Adventure, New Zealand</div>
+      <div>Email: ecoadventure@escape.com</div>
+      <div>Phone: +64 (021) 567 890</div>
+    </div>
+  </footer>
+
+</body>
+</html>
