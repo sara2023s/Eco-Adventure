@@ -107,7 +107,7 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.8);
-  max-width: 270px; /* Set a maximum width for each card */
+  max-width: 270px; 
   max-height: 60%;
   flex: 0 0 50%;
   transition: transform 0.3s ease-in-out;
@@ -270,10 +270,6 @@ h2 {
   text-align: left;
 }
 
-
-
-/* Add this styling for the 3x3 grid */
-/* Add this styling for the 3x3 grid */
 .all-tours {
   padding: 40px 0;
   text-align: center;
@@ -323,7 +319,6 @@ h2 {
   margin-bottom: 0; /* Remove default margin to align with button */
 }
 
-/* Add these styles for consistency with your existing code */
 .all-tour-duration {
   font-style: italic;
   margin-bottom: 10px;
@@ -355,10 +350,8 @@ h2 {
 
 .tour-details h3,
 .tour-duration {
-  margin-right: 10px; /* Add some space between text and button */
+  margin-right: 10px; 
 }
-
-
 
 
 /* Footer */
@@ -366,13 +359,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Adjust the padding as needed */
+  padding: 20px; 
   background: linear-gradient(to bottom, #008148, #274F3D);
   color: #ffffff;
 }
 
 .logo-image-footer {
-  width: 200px; /* Adjust the size as needed */
+  width: 200px; 
   height: auto;
 }
 
@@ -389,7 +382,7 @@ footer {
 }
 
 .footer-nav ul li {
-  margin-bottom: 10px; /* Adjust the spacing between pages */
+  margin-bottom: 10px;
 }
 
 .footer-nav ul li a {
@@ -409,7 +402,7 @@ footer {
 }
 
 .contact-details div {
-  margin-bottom: 10px; /* Adjust the spacing between contact details */
+  margin-bottom: 10px; 
 }
 
 /*...*/
